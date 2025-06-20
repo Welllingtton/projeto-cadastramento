@@ -24,7 +24,8 @@ header {
 
 header > img {
     width: 200px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
+    box-shadow: 0px 0px 5px gray;
+    margin-left: 10px;
 }
 
 body {
@@ -61,6 +62,7 @@ main {
     height: 465px;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 5px gray;
 }
 
 .pags > li {
@@ -84,6 +86,8 @@ main {
 }
 
 .formulario {
+    min-height: 422px;
+    min-width: 418px;
     flex: 1;
 }
 
