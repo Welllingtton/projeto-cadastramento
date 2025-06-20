@@ -24,8 +24,7 @@ header {
 
 header > img {
     width: 200px;
-    padding: 10px;
-
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.397);
 }
 
 #texto {
@@ -45,4 +44,33 @@ header > img {
 
 #final {
     background-color: black;
+}
+
+.navbar {
+    display: flex;
+    background-color: #333333;
+    width: 300px;
+    height: 465px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pags > li {
+    padding: 15px 0px;
+    text-align: center;
+    list-style: none;
+}
+
+.pags a {
+    display: block;
+    text-decoration: none;
+    color: lightgray;
+    padding: 15px 15px;
+}
+
+.pags a:hover {
+    background-color: #4b4b4b;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s ease;
 }
