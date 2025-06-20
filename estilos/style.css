@@ -8,24 +8,41 @@
 }
 
 header {
+    background-image: linear-gradient(180deg, #F8F7F4, #a3d900d2);
     display: flex;
     width: 100vw;
-    height: 145px;
+    height: 225px;
     align-items: center;
     padding: 20px;
     gap: 70px;
     text-align: center;
     padding: 20px;
+    padding-left: 0px;
+    box-shadow: 0px 3px 5px #749b00d2;
 
 }
 
 header > img {
     width: 200px;
+    padding: 10px;
+
 }
 
-.texto {
+#texto {
     display: flex;
     flex-direction: column;
     text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.144);
 }
 
+#texto > h2 {
+    padding-bottom: 20px;
+}
+
+#textp > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#final {
+    background-color: black;
+}
