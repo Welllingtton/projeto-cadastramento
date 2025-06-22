@@ -83,13 +83,10 @@ main {
 .pags a:hover {
     background-color: #4b4b4b;
     color: white;
+    text-shadow: 2px 2px 5px rgb(51, 51, 51);
     border-radius: 10px;
     transform: translate(-3px, -3px);
-    transition: .4s, border .7s;
-}
-
-.pags a:hover::after {
-    transition-duration: .4s;
+    transition: .4s, border .7s ease;
 }
 
 .formulario {
@@ -124,6 +121,46 @@ main {
     width: 90%;
     margin: auto;
     text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+fieldset {
+    padding: 20px;
+    border-radius: 6px;
+}
+
+input {
+    margin: 10px;
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+select {
+    margin: 10px;
+    width: 50%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#button {
+    width: 50%;
+    font-size: 14px;
+    border-radius: 5px;
 }
 
 footer {
