@@ -31,9 +31,16 @@
         </section>
         <section class="formulario">
             <div>
-                <h2>SuperFácil Supermercado</h2>
-                <h3>Seja bem - vindo(a) ao Sistema de Cadastramento.</h3>
-                <p>Somos a equipe SuperFácil. Este sistema coloca todos os colaboradores em unidade de conhecimento do nosso estoque. Preencha os dados com cuidado, atenção e tenha um ótimo trabalho!</p>
+                <form action="" method="GET">
+                    <fieldset>
+                        <legend>Controle de Estoque</legend>
+                        <div><input type="number" name="estq" id="estq" placeholder="Quantidade em Estoque"></div>
+                        <div><input type="number" name="estqmin" id="estqmin" placeholder="Estoque Mínimo"></div>
+                        <div><input type="text" name="loc" id="loc" placeholder="Localização no Estoque"></div>
+                        <div><input type="date" name="valid" id="valid"></div>
+                        <div class="btn"><input type="button" value="Cadastrar" id="button"></div>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </main>
@@ -45,9 +52,17 @@
             <p>Última atualização: 20/06/2025</p>
         </div>
     </footer>
-
     <script>
+        const inputData = document.getElementById('valid');
 
+        // Pega a data atual no formato AAAA-MM-DD
+        const hoje = new Date();
+        const dia = String(hoje.getDate()).padStart(2, '0');
+        const mes = String(hoje.getMonth() + 1).padStart(2, '0');
+        const ano = hoje.getFullYear();
+        const dataAtual = `${ano}-${mes}-${dia}`;
+
+        inputData.value = dataAtual;
     </script>
 </body>
 

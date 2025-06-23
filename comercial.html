@@ -31,9 +31,16 @@
         </section>
         <section class="formulario">
             <div>
-                <h2>SuperFácil Supermercado</h2>
-                <h3>Seja bem - vindo(a) ao Sistema de Cadastramento.</h3>
-                <p>Somos a equipe SuperFácil. Este sistema coloca todos os colaboradores em unidade de conhecimento do nosso estoque. Preencha os dados com cuidado, atenção e tenha um ótimo trabalho!</p>
+                <form action="" method="GET">
+                    <fieldset>
+                        <legend>Informações Comerciais</legend>
+                        <div><input type="number" name="venda" id="venda" placeholder="Preço de venda"></div>
+                        <div><input type="number" name="custo" id="custo" placeholder="Preço de Custo"></div>
+                        <div><input type="text" name="unmed" id="unmed" placeholder="Unidade de Medida"></div>
+                        <div><input type="number" name="codbarra" id="codbarra" placeholder="Código de Barras"></div>
+                        <div class="btn"><input type="button" value="Cadastrar" id="button"></div>
+                    </fieldset>
+                </form>
             </div>
         </section>
     </main>
