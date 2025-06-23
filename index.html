@@ -23,17 +23,58 @@
     <main>
         <section class="navbar">
             <ul class="pags">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="basico.html">Informações Básicas do Produto</a></li>
-                <li><a href="comercial.html">Informações Comerciais</a></li>
-                <li><a href="estoque.html">Controle de Estoque</a></li>
+                <li id="link1"><a href="#">Home</a></li>
+                <li id="link2"><a href="#">Informações Básicas do Produto</a></li>
+                <li id="link3"><a href="#">Informações Comerciais</a></li>
+                <li id="link4"><a href="#">Controle de Estoque</a></li>
             </ul>
         </section>
         <section class="formulario">
             <div>
-                <h2>SuperFácil Supermercado</h2>
+                <h2>Super<span id="cor">Fácil</span> Supermercado</h2>
                 <h3>Seja bem - vindo(a) ao Sistema de Cadastramento.</h3>
                 <p>Somos a equipe SuperFácil. Este sistema coloca todos os colaboradores em unidade de conhecimento do nosso estoque. Preencha os dados com cuidado, atenção e tenha um ótimo trabalho!</p>
+
+                <form action="" method="GET">
+                    <fieldset class="form">
+                        <legend>Informações Básicas do Produto</legend>
+                        <div><input type="text" name="nome" id="nome" placeholder="Nome"></div>
+                        <div><input type="text" name="descricao" id="descricao" placeholder="Descrição do produto"></div>
+                        <div><select name="categoria" id="categoria">
+                                    <option value="" disabled selected hidden>Selecione uma categoria</option>
+                                    <option value="alimento">Alimento</option>
+                                    <option value="frios">Carnes e Derivados</option>
+                                    <option value="mercearia">Mercearia</option>
+                                    <option value="limpeza">Limpeza</option>
+                                    <option value="">Etc</option>
+                            </select>
+                        </div>
+                        <div><input type="text" name="marca" id="marca" placeholder="Marca do Produto"></div>
+                    </fieldset>
+                </form>
+
+                <form action="" method="GET">
+                    <fieldset class="form">
+                        <legend>Informações Comerciais</legend>
+                        <div><input type="number" name="venda" id="venda" placeholder="Preço de venda"></div>
+                        <div><input type="number" name="custo" id="custo" placeholder="Preço de Custo"></div>
+                        <div><input type="text" name="unmed" id="unmed" placeholder="Unidade de Medida"></div>
+                        <div><input type="number" name="codbarra" id="codbarra" placeholder="Código de Barras"></div>
+                    </fieldset>
+                </form>
+
+                <form action="" method="GET">
+                    <fieldset class="form">
+                        <legend>Controle de Estoque</legend>
+                        <div><input type="number" name="estq" id="estq" placeholder="Quantidade em Estoque"></div>
+                        <div><input type="number" name="estqmin" id="estqmin" placeholder="Estoque Mínimo"></div>
+                        <div><input type="text" name="loc" id="loc" placeholder="Localização no Estoque"></div>
+                        <div><input type="date" name="valid" id="valid"></div>
+                    </fieldset>
+                </form>
+                <div class="btn"><input type="button" value="Cadastrar" id="button" onclick="cadastrar()"></div>
+
+                <div id="listaProdutos"></div>
             </div>
         </section>
     </main>
@@ -46,9 +87,7 @@
         </div>
     </footer>
 
-    <script>
-
-    </script>
+<script src="script.js"></script>
 </body>
 
 </html>
