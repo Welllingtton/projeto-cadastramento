@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/* Typical Device Breakpoints
+------------------------------
+Pequenas telas: até 320px até 480px
+calular: 481px até 768px
+Tablet: 769px até 1024px
+Desktop: 1025px até 1200px
+Grandes Telas: acima de 1201px
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -80,7 +89,7 @@ main {
     top: 0;
     left: 0;
     background-color: #333333;
-    width: 300px;
+    width: 200px;
     height: 100vh;
     justify-content: center;
     align-items: center;
