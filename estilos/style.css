@@ -163,6 +163,11 @@ select {
     border-radius: 5px;
 }
 
+#button:hover {
+    background-color: rgb(167, 167, 167);
+    transition: .4s ease;
+}
+
 footer {
     display: flex;
     background-color: black;
