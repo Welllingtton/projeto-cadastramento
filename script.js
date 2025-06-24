@@ -113,3 +113,20 @@ function mostrarProdutos() {
 // Carrega os produtos salvos ao abrir a página
 window.onload = mostrarProdutos
 
+
+function mudouTamanho() {
+    if (window.innerHTML >= 769) {
+        navbar.style.display = 'block'
+    } else {
+        navbar.style.display = 'none'
+    }
+}
+
+
+function menu() {
+    if (navbar.style.display == 'block') {
+        navbar.style.display = 'none'
+    } else {
+        navbar.style.display = 'block'
+    }
+}

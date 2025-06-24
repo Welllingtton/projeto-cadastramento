@@ -22,10 +22,6 @@ html, body {
     width: 100vw;
 }
 
-main {
-    margin-left: 300px;
-}
-
 header {
     background-image: linear-gradient(180deg, #F8F7F4, #a3d900d2);
     display: flex;
@@ -48,6 +44,14 @@ header > img {
     width: 200px;
     box-shadow: 0px 0px 5px gray;
     margin-left: 10px;
+}
+
+#burguer {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
 }
 
 #cor {
@@ -78,26 +82,17 @@ body {
     background-color: black;
 }
 
-main {
-    display: flex;
-}
-
 .navbar {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #333333;
-    width: 200px;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 5px grey;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: 2px solid gray;
 }
 
 .pags > li {
-    padding: 15px 0px;
     text-align: center;
     list-style: none;
 }
@@ -106,7 +101,7 @@ main {
     display: block;
     text-decoration: none;
     color: rgb(161, 161, 161);
-    padding: 15px 15px;
+    padding: 10px;
 }
 
 .pags a:hover {
